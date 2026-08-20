@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taurus Student Council Elections</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+       <div class="brand-mark">
+  <img src="images.png" alt="The Taurus School Logo">
+</div>
+        <div>
+          <!-- <strong>The Taurus School</strong>
+          <span>Student Council Elections</span> -->
+        </div>
+      </div>
+      <div class="status"><span class="dot"></span> Election Portal</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">2026 STUDENT LEADERSHIP</p>
+          <h1>Choose your leaders.</h1>
+          <p>
+            Cast one ballot across the available positions. Review your choices
+            before submitting.
+          </p>
+        </div>
+        <div class="hero-card">
+          <span>Votes recorded</span>
+          <strong id="voteCount">0</strong>
+          <small id="thresholdText">Results unlock at 10 votes</small>
+        </div>
+      </section>
+
+      <div id="notice" class="notice hidden"></div>
+
+      <section id="ballotSection" class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">YOUR BALLOT</p>
+            <h2>Select one candidate for each position</h2>
+          </div>
+          <span id="ballotState" class="pill">Open</span>
+        </div>
+        <div id="positions"></div>
+
+        <div class="submit-row">
+          <p id="validationText">All positions are required.</p>
+          <button id="submitVote" class="primary">Submit Vote</button>
+        </div>
+      </section>
+
+      <section id="submittedSection" class="panel hidden center">
+        <div class="success-icon">✓</div>
+        <p class="eyebrow">BALLOT SUBMITTED</p>
+        <h2>Your vote has been recorded.</h2>
+        <p>
+          This ballot stays locked if the page is refreshed. An authorized
+          election administrator must open the next ballot.
+        </p>
+        <button id="adminOpen" class="secondary">
+          Open Next Student Ballot
+        </button>
+      </section>
+
+      <section id="resultsSection" class="panel hidden">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">LIVE RESULTS</p>
+            <h2>Election results</h2>
+          </div>
+          <span class="pill success">Unlocked</span>
+        </div>
+        <div id="results"></div>
+      </section>
+
+      <section class="admin panel">
+        <div id="adminLoginView">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">RESTRICTED AREA</p>
+              <h2>Election Administration</h2>
+            </div>
+            <span class="pill">🔐 Admin only</span>
+          </div>
+          <p class="muted">
+            Election staff can manage candidates, ballots, settings, and results
+            from this panel.
+          </p>
+          <div class="admin-login">
+            <label
+              >Administrator PIN<input
+                id="adminLoginPin"
+                type="password"
+                placeholder="Enter PIN"
+            /></label>
+            <button id="adminLogin" class="primary">Login</button>
+          </div>
+        </div>
+        <div id="adminDashboard" class="hidden">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">ADMIN DASHBOARD</p>
+              <h2>Election control center</h2>
+            </div>
+            <button id="adminLogout" class="secondary">Log out</button>
+          </div>
+          <div class="admin-stats">
+            <div>
+              <span>Total votes</span><strong id="adminVoteCount">0</strong>
+            </div>
+            <div>
+              <span>Results threshold</span
+              ><strong id="adminThreshold">10</strong>
+            </div>
+          </div>
+          <div class="admin-controls">
+            <button id="adminOpen" class="primary">
+              Open Next Student Ballot
+            </button>
+            <button id="adminShowResults" class="secondary">
+              View Results
+            </button>
+          </div>
+          <div class="admin-divider"></div>
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">CANDIDATES</p>
+              <h3>Manage candidates</h3>
+            </div>
+          </div>
+          <div class="candidate-form">
+            <select id="candidatePosition"></select>
+            <input id="candidateName" placeholder="Candidate name" />
+            <input id="candidateClass" placeholder="Class / section" />
+            <input id="candidateSymbol" placeholder="Symbol, e.g. ★" />
+            <input id="candidatePicture" type="file" accept="image/*" />
+            <button id="addCandidate" class="primary">Add candidate</button>
+          </div>
+          <div id="candidateManager" class="candidate-manager"></div>
+          <div class="admin-divider"></div>
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">ELECTION SETTINGS</p>
+              <h3>Configure results</h3>
+            </div>
+          </div>
+          <div class="settings-row">
+            <label
+              >Results unlock after<input
+                id="thresholdInput"
+                type="number"
+                min="1"
+                value="10"
+            /></label>
+            <button id="saveThreshold" class="primary">Save threshold</button>
+          </div>
+          <div class="admin-divider"></div>
+          <button id="resetElection" class="danger">
+            Reset Entire Demo Election
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>The Taurus School • Student Council Elections</span>
+      <span>Demo template</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
