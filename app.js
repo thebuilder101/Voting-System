@@ -112,12 +112,12 @@ function renderBallot() {
   root.innerHTML = state.positions
     .map((p) => {
       const cs = state.candidates[p.id] || [];
-      return `<div class="position"><h3>${p.name}</h3><div class="candidates">${cs
-        .map(
-          (c) =>
-            `<label class="candidate"><input type="radio" name="${p.id}" value="${c.id}"><span>${avatarHTML(c)}</span><span class="candidate-info"><strong>${c.name}</strong><small>${c.className}</small></span><span class="symbol">${c.symbol}</span></label>`,
-        )
-        .join("")}</div></div>`;
+      return `<div class="position" data-position="${p.id}"><h3>${p.name}</h3><div class="candidates">${cs
+  .map(
+    (c) =>
+      `<label class="candidate"><input type="radio" name="${p.id}" value="${c.id}"><span>${avatarHTML(c)}</span><span class="candidate-info"><strong>${c.name}</strong><small>${c.className}</small></span><span class="symbol">${c.symbol}</span></label>`,
+  )
+  .join("")}</div></div>`;
     })
     .join("");
   document.querySelectorAll(".candidate input").forEach((i) =>

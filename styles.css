@@ -866,16 +866,15 @@ main {
 }
 
 .candidate:hover {
-    border-color: #8B1E24;
+    border-color: var(--theme-color, #8B1E24);
     transform: translateY(-1px);
 }
 
 .candidate.selected {
-    border-color: #8B1E24;
-    background: #fdf5f5; /* Subtle Crimson Tint */
-    box-shadow: 0 0 0 2px rgba(139, 30, 36, .12);
+    border-color: var(--theme-color, #8B1E24);
+    background: var(--theme-bg, #fdf5f5);
+    box-shadow: 0 0 0 2px var(--theme-glow, rgba(139, 30, 36, .12));
 }
-
 .candidate input {
     position: absolute;
     opacity: 0;
@@ -1305,6 +1304,79 @@ footer {
     align-items: end;
     gap: 10px;
     max-width: 620px;
+}
+/* Dynamic selected state driven by JavaScript color variables */
+.candidate.selected {
+    border-color: var(--theme-color, #8B1E24);
+    box-shadow: 0 0 0 2px var(--theme-glow, rgba(139, 30, 36, .12));
+    background: var(--theme-bg, #fdf5f5);
+}
+
+/* Position-specific color assignments */
+.position[data-position="head-boy"] {
+    --theme-color: #ffd700;
+    --theme-glow: rgba(255, 215, 0, 0.25);
+    --theme-bg: #fffdf0;
+}
+
+.position[data-position="head-girl"] {
+    --theme-color: #c0c0c0;
+    --theme-glow: rgba(192, 192, 192, 0.3);
+    --theme-bg: #f9f9f9;
+}
+
+.position[data-position="deputy-head-boy"] {
+    --theme-color: #cd7f32;
+    --theme-glow: rgba(205, 127, 50, 0.2);
+    --theme-bg: #fdf8f5;
+}
+
+.position[data-position="deputy-head-girl"] {
+    --theme-color: #b76e79;
+    --theme-glow: rgba(183, 110, 121, 0.2);
+    --theme-bg: #fdf6f7;
+}
+
+.position[data-position="red"] {
+    --theme-color: #e63946;
+    --theme-glow: rgba(230, 57, 70, 0.2);
+    --theme-bg: #fdf5f5;
+}
+
+.position[data-position="blue"] {
+    --theme-color: #1d3557;
+    --theme-glow: rgba(29, 53, 87, 0.2);
+    --theme-bg: #f4f7fb;
+}
+
+.position[data-position="yellow"] {
+    --theme-color: #e9c46a;
+    --theme-glow: rgba(233, 196, 106, 0.25);
+    --theme-bg: #fdfbf4;
+}
+
+.position[data-position="green"] {
+    --theme-color: #00ff1e;
+    --theme-glow: rgba(42, 157, 143, 0.2);
+    --theme-bg: #f2f9f8;
+}
+
+.position[data-position="drama"] {
+    --theme-color: #7209b7;
+    --theme-glow: rgba(114, 9, 183, 0.2);
+    --theme-bg: #f8f4fc;
+}
+
+.position[data-position="sports"] {
+    --theme-color: #662700;
+    --theme-glow: rgba(217, 192, 4, 0.2);
+    --theme-bg: #fdf5f5;
+}
+
+.position[data-position="media"] {
+    --theme-color: #00b4d8;
+    --theme-glow: rgba(0, 180, 216, 0.2);
+    --theme-bg: #f0fbfd;
 }
 
 @media(max-width:600px) {
