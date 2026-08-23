@@ -14,63 +14,111 @@ const defaultPositions = [
 ];
 const demoCandidates = {
   "head-boy": [
-    ["Ayaan Khan", "O3", "★"],
-    ["Hamza Ali", "O3", "◆"],
-    ["Rayyan Ahmed", "O2", "●"],
+    ["ahmed-hasan-khalid", "Ahmed Hasan Khalid", "Sr-III / Class-X", "🚀"],
+    ["ilyas-bhutto", "Ilyas Bhutto", "Sr-III / Class-X", "🛡️"],
+    ["m-umer-pasha", "M. Umer Pasha", "Sr-III / Class-X", "🦇"],
+    ["syed-sadoon-ali", "Syed Sadoon Ali", "Sr-III / Class-X", "🪔"],
+    ["hamza-javaid", "Hamza Javaid", "Sr-III / Class-X", "🏆"],
+    ["ibaad-ali", "Ibaad Ali", "Sr-III / Class-X", "⚔️"],
+    ["mashood-ali-khan", "Mashood Ali Khan", "Sr-III / Class-X", "🌳"],
+    ["zakwan-ali", "Zakwan Ali", "Sr-III / Class-X", "🔥"],
+    ["sm-shamraiz-ali-khan", "S.M. Shamraiz Ali Khan", "Sr-III / Class-X", "🥇"],
+    ["ahmed-shaikh", "Ahmed Shaikh", "Sr-III / Class-X", "🔦"],
   ],
+
   "head-girl": [
-    ["Ayesha Malik", "O3", "★"],
-    ["Hiba Noor", "O3", "✦"],
-    ["Maham Shah", "O2", "●"],
+    ["ayesha-shoaib", "Ayesha Shoaib", "Sr-III / Class-X", "🎧"],
+    ["nareen-kamran", "Nareen Kamran", "Sr-III / Class-X", "🕊️"],
+    ["minna-shams", "Minna Shams", "Sr-III / Class-X", "🪶"],
+    ["momina-binto-ahsan", "Momina Binto Ahsan", "Sr-III / Class-X", "📖"],
+    ["zehra-malik", "Zehra Malik", "Sr-III / Class-X", "☀️"],
   ],
-  "deputy-head-boy": [
-    ["Daniyal", "O2", "▲"],
-    ["Zain", "O2", "◆"],
-  ],
-  "deputy-head-girl": [
-    ["Eman", "O2", "✦"],
-    ["Areeba", "O2", "★"],
-  ],
+"deputy-head-boy": [
+  ["ahmed-hasan-khalid", "Ahmed Hasan Khalid", "Sr-III / Class-X", "🚀"],
+  ["ilyas-bhutto", "Ilyas Bhutto", "Sr-III / Class-X", "🛡️"],
+  ["m-umer-pasha", "M. Umer Pasha", "Sr-III / Class-X", "🦇"],
+  ["syed-sadoon-ali", "Syed Sadoon Ali", "Sr-III / Class-X", "🪔"],
+  ["hamza-javaid", "Hamza Javaid", "Sr-III / Class-X", "🏆"],
+  ["ibaad-ali", "Ibaad Ali", "Sr-III / Class-X", "⚔️"],
+  ["mashood-ali-khan", "Mashood Ali Khan", "Sr-III / Class-X", "🌳"],
+  ["zakwan-ali", "Zakwan Ali", "Sr-III / Class-X", "🔥"],
+  ["sm-shamraiz-ali-khan", "S.M. Shamraiz Ali Khan", "Sr-III / Class-X", "🥇"],
+  ["ahmed-shaikh", "Ahmed Shaikh", "Sr-III / Class-X", "🔦"],
+],
+
+"deputy-head-girl": [
+  ["ayesha-shoaib", "Ayesha Shoaib", "Sr-III / Class-X", "🎧"],
+  ["nareen-kamran", "Nareen Kamran", "Sr-III / Class-X", "🕊️"],
+  ["minna-shams", "Minna Shams", "Sr-III / Class-X", "🪶"],
+  ["momina-binto-ahsan", "Momina Binto Ahsan", "Sr-III / Class-X", "📖"],
+  ["zehra-malik", "Zehra Malik", "Sr-III / Class-X", "☀️"],
+],
+
   red: [
-    ["Candidate Red 1", "O3", "🛡"],
-    ["Candidate Red 2", "O2", "★"],
+    ["m-yahya", "M. Yahya", "Bradford", "⭐"],
+    ["minahil-adnan", "Minahil Adnan", "Bradford", "🌙"],
+    ["m-sufyan-burki", "M. Sufyan Burki", "Bradford", "🕐"],
   ],
+
   blue: [
-    ["Candidate Blue 1", "O3", "⚡"],
-    ["Candidate Blue 2", "O2", "◆"],
+    ["usman-amir", "Usman Amir", "Aberdeen", "♞"],
+    ["mariam-karim", "Mariam Karim", "Aberdeen", "☀️"],
+    ["zunaira-adnan", "Zunaira Adnan", "Aberdeen", "🌷"],
+    ["usman-azeem", "Usman Azeem", "Aberdeen", "🎓"],
+    ["abdullah-imran", "Abdullah Imran", "Aberdeen", "🔗"],
+    ["sameeha-kamran", "Sameeha Kamran", "Aberdeen", "🕷️"],
   ],
+
   yellow: [
-    ["Candidate Yellow 1", "O3", "☀"],
-    ["Candidate Yellow 2", "O2", "★"],
+    ["m-absar-ali", "M. Absar Ali", "Hereford", "🔑"],
+    ["aimen-hasan", "Aimen Hasan", "Hereford", "✨"],
+    ["mahad-alam", "Mahad Alam", "Hereford", "🕯️"],
   ],
+
   green: [
-    ["Candidate Green 1", "O3", "🌿"],
-    ["Candidate Green 2", "O2", "◆"],
+    ["nargis-fatima", "Nargis Fatima", "Brangus", "🌀"],
+    ["nabaht-sana", "Nabaht Sana", "Brangus", "🫧"],
+    ["syeda-fatima-jaffri", "Syeda Fatima Jaffri", "Brangus", "🦅"],
+    ["hibban-shoaib", "Hibban Shoaib", "Brangus", "🧩"],
   ],
+
   drama: [
-    ["Drama Candidate 1", "O3", "🎭"],
-    ["Drama Candidate 2", "O2", "★"],
+    ["syed-aryan-sohail", "Syed Aryan Sohail", "Debate & Drama", "⚡"],
+    ["sami-nawaz", "Sami Nawaz", "Debate & Drama", "🎤"],
+    ["syeda-kanza-fatima-zaidi", "Syeda Kanza Fatima Zaidi", "Debate & Drama", "🎲"],
+    ["khurram-abdur-rehman", "Khurram Abdur Rehman", "Debate & Drama", "🌱"],
+    ["eman-israr", "Eman Israr", "Debate & Drama", "☂️"],
   ],
-  sports: [
-    ["Sports Candidate 1", "O3", "🏆"],
-    ["Sports Candidate 2", "O2", "⚡"],
-  ],
+
   media: [
-    ["Media Candidate 1", "O3", "◉"],
-    ["Media Candidate 2", "O2", "★"],
+    ["m-uzair-mirza", "M. Uzair Mirza", "Media Society", "➡️"],
+    ["ebrahim", "Ebrahim", "Media Society", "✏️"],
+    ["aimen-aftab", "Aimen Aftab", "Media Society", "📷"],
+  ],
+
+  sports: [
+    ["hanzala-siddiqui", "Hanzala Siddiqui", "Sports Society", "🏒"],
+    ["m-affan-siddiqui", "M. Affan Siddiqui", "Sports Society", "🐐"],
+    ["rabayal-kashif", "Rabayal Kashif", "Sports Society", "🎯"],
+    ["momal-shaheen", "Momal Shaheen", "Sports Society", "⚽"],
+    ["m-rayyan-ali", "M. Rayyan Ali", "Sports Society", "🏏"],
+    ["daneen", "Daneen", "Sports Society", "♟️"],
+    ["abdur-rehman", "Abdur Rehman", "Sports Society", "🏸"],
   ],
 };
 function fresh() {
   const candidates = {};
+
   for (const p of defaultPositions) {
-    candidates[p.id] = demoCandidates[p.id].map((x, i) => ({
-      id: p.id + "-" + i,
-      name: x[0],
-      className: x[1],
-      symbol: x[2],
+    candidates[p.id] = (demoCandidates[p.id] || []).map((x) => ({
+      id: x[0],
+      name: x[1],
+      className: x[2],
+      symbol: x[3],
       picture: "",
     }));
   }
+
   return {
     positions: defaultPositions,
     candidates,
@@ -107,33 +155,138 @@ function render() {
   renderResults();
   renderSubmitted();
 }
+function updateHeadDeputyRestrictions() {
+  const headBoy = document.querySelector(
+    'input[name="head-boy"]:checked'
+  )?.value;
+
+  const deputyHeadBoy = document.querySelectorAll(
+    'input[name="deputy-head-boy"]'
+  );
+
+  deputyHeadBoy.forEach((input) => {
+    const shouldDisable = input.value === headBoy;
+
+    input.disabled = shouldDisable;
+
+    if (shouldDisable && input.checked) {
+      input.checked = false;
+      input.closest(".candidate")?.classList.remove("selected");
+    }
+
+    input.closest(".candidate")?.classList.toggle(
+      "disabled",
+      shouldDisable
+    );
+  });
+
+  const headGirl = document.querySelector(
+    'input[name="head-girl"]:checked'
+  )?.value;
+
+  const deputyHeadGirl = document.querySelectorAll(
+    'input[name="deputy-head-girl"]'
+  );
+
+  deputyHeadGirl.forEach((input) => {
+    const shouldDisable = input.value === headGirl;
+
+    input.disabled = shouldDisable;
+
+    if (shouldDisable && input.checked) {
+      input.checked = false;
+      input.closest(".candidate")?.classList.remove("selected");
+    }
+
+    input.closest(".candidate")?.classList.toggle(
+      "disabled",
+      shouldDisable
+    );
+  });
+}
+document.querySelectorAll(".candidate input").forEach((i) =>
+  i.addEventListener("change", () => {
+    document
+      .querySelectorAll(`input[name="${i.name}"]`)
+      .forEach((x) =>
+        x.closest(".candidate").classList.toggle(
+          "selected",
+          x.checked
+        )
+      );
+
+    updateHeadDeputyRestrictions();
+    validate();
+  })
+);
 function renderBallot() {
   const root = document.getElementById("positions");
+
   root.innerHTML = state.positions
     .map((p) => {
       const cs = state.candidates[p.id] || [];
-      return `<div class="position" data-position="${p.id}"><h3>${p.name}</h3><div class="candidates">${cs
-  .map(
-    (c) =>
-      `<label class="candidate"><input type="radio" name="${p.id}" value="${c.id}"><span>${avatarHTML(c)}</span><span class="candidate-info"><strong>${c.name}</strong><small>${c.className}</small></span><span class="symbol">${c.symbol}</span></label>`,
-  )
-  .join("")}</div></div>`;
+
+      return `
+        <div class="position" data-position="${p.id}">
+          <h3>${p.name}</h3>
+
+          <div class="candidates">
+            ${cs
+              .map(
+                (c) => `
+                  <label class="candidate">
+                    <input
+                      type="radio"
+                      name="${p.id}"
+                      value="${c.id}"
+                    >
+
+                    <span>${avatarHTML(c)}</span>
+
+                    <span class="candidate-info">
+                      <strong>${c.name}</strong>
+                      <small>${c.className}</small>
+                    </span>
+
+                    <span class="symbol">${c.symbol}</span>
+                  </label>
+                `
+              )
+              .join("")}
+          </div>
+        </div>
+      `;
     })
     .join("");
+
   document.querySelectorAll(".candidate input").forEach((i) =>
     i.addEventListener("change", () => {
       document
         .querySelectorAll(`input[name="${i.name}"]`)
         .forEach((x) =>
-          x.closest(".candidate").classList.toggle("selected", x.checked),
+          x.closest(".candidate").classList.toggle(
+            "selected",
+            x.checked
+          )
         );
+
+      updateHeadDeputyRestrictions();
       validate();
-    }),
+    })
   );
+
+  updateHeadDeputyRestrictions();
+
   document
     .getElementById("ballotSection")
     .classList.toggle("hidden", state.submitted);
 }
+updateHeadDeputyRestrictions();
+
+document
+  .getElementById("ballotSection")
+  .classList.toggle("hidden", state.submitted);
+
 function validate() {
   const missing = state.positions.filter(
     (p) => !document.querySelector(`input[name="${p.id}"]:checked`),
@@ -147,6 +300,17 @@ function renderSubmitted() {
   document
     .getElementById("submittedSection")
     .classList.toggle("hidden", !state.submitted);
+}
+function validate() {
+  const missing = state.positions.filter(
+    (p) => !document.querySelector(`input[name="${p.id}"]:checked`)
+  );
+
+  document.getElementById("validationText").textContent = missing.length
+    ? `${missing.length} position(s) still need a selection.`
+    : "All positions selected. Ready to submit.";
+
+  document.getElementById("submitVote").disabled = !!missing.length;
 }
 function renderResults() {
   const unlocked = state.votes.length >= state.threshold;
@@ -171,17 +335,44 @@ function notice(msg) {
   n.classList.remove("hidden");
   setTimeout(() => n.classList.add("hidden"), 3500);
 }
-document.getElementById("submitVote").onclick = () => {
-  if (state.submitted) return;
+document.getElementById("submitVote").onclick = () => { if (state.submitted) return;
+
   const ballot = {};
+
   for (const p of state.positions) {
     const el = document.querySelector(`input[name="${p.id}"]:checked`);
+
     if (!el) {
       notice("Please select a candidate for every position.");
       return;
     }
+
     ballot[p.id] = el.value;
   }
+
+  // PUT IT HERE
+  if (
+    ballot["head-boy"] &&
+    ballot["deputy-head-boy"] &&
+    ballot["head-boy"] === ballot["deputy-head-boy"]
+  ) {
+    notice(
+      "The same candidate cannot be selected for Head Boy and Deputy Head Boy."
+    );
+    return;
+  }
+
+  if (
+    ballot["head-girl"] &&
+    ballot["deputy-head-girl"] &&
+    ballot["head-girl"] === ballot["deputy-head-girl"]
+  ) {
+    notice(
+      "The same candidate cannot be selected for Head Girl and Deputy Head Girl."
+    );
+    return;
+  }
+
   state.votes.push(ballot);
   state.submitted = true;
   save();
